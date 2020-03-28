@@ -4,6 +4,10 @@ import * as uuid from 'uuid/v1';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-taks-filter.dto';
 
+/**
+ * @Injectable() It is used to define that a certain class should have a shared instance across the module.
+ * The instance can then be injected using Dependency Injection, and all injectors will have access to the same instance and its state.
+ */
 @Injectable()
 export class TasksService {
   private tasks: Task[] = [];
