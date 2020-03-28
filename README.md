@@ -12,7 +12,7 @@
   yarn
 ```
 
-- Run on terminal
+- Run the project
 
 ```
   yarn start:dev
