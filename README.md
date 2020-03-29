@@ -1,19 +1,27 @@
 # Task Management - NestJS
 
-- Project developed based on [NestJS Zero to Hero - Modern TypeScript Back-end Development - Udemy course](https://www.udemy.com/course/nestjs-zero-to-hero/)
+## Description
 
-## How to run
+Project developed based on [NestJS Zero to Hero - Modern TypeScript Back-end Development - Udemy course](https://www.udemy.com/course/nestjs-zero-to-hero/)
 
-- Install [NodeJS](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/)
+## Installation
 
-- Install the dependencies
+- [NodeJS](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
 
-```
+```bash
   yarn
 ```
 
-- Run the project
+## Running the app
 
-```
-  yarn start:dev
+```bash
+# development
+$ yarn start
+
+# watch mode
+$ yarn start:dev
+
+# production mode
+$ yarn start:prod
 ```
