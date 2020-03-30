@@ -4,6 +4,11 @@ import { CreateTaskDto } from './dto/create-task.dto';
 import { TaskStatus } from './task-status.enum';
 import { GetTasksFilterDto } from './dto/get-taks-filter.dto';
 
+/**
+ * Creating a repository allows for a place to contain our database-interaction related logic.
+ * This way, we can keep our services cleaner. Service will still be able to handle business logic, but database-related logic will be handled by the repository.
+ */
+
 @EntityRepository(Task)
 export class TaskRepository extends Repository<Task> {
   async getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
